@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="notScrolled">
+        <h1 class="header-text">
+          TIN<a
+            id="lastletter"
+            class="clickable"
+            href="https://tina.zone/xr1.html"
+            ><span
+              onmouseover="showLabel('A', 'augmented reality work')"
+              onmouseout="hideLabel('A')"
+              >A</span
+            ></a
+          >
+          TA<a
+            class="clickable"
+            href="https://drive.google.com/file/d/1jasjuaUopldaV2RSYsmLYUpelBHPgPNf/view?usp=sharing"
+            ><span
+              onmouseover="showLabel('R', 'resume')"
+              onmouseout="hideLabel('R')"
+              >R</span
+            ></a
+          >I<a class="clickable" href="https://github.com/ttarigh//"
+            ><span
+              onmouseover="showLabel('G', 'github')"
+              onmouseout="hideLabel('G')"
+              >G</span
+            ></a
+          >HI<a class="clickable" href="allprojects1.html"
+            ><span
+              onmouseover="showLabel('A', 'other works')"
+              onmouseout="hideLabel('A')"
+              >A</span
+            ></a
+          >N <span id="dynamic-word"> is an artist.</span><span id="labels"></span>
+        </h1>
+      </div>
+      <div style="display: none" id="Scrolled">
+        <h1 class="header-text">
+          Tina Tarighian
+          <a href="#" id="more-link">{more...}</a>
+        </h1>
+      </div>
+      <!-- About Me -->
+      <div style="display: none; text-align: center" id="moreInfo">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <p>
+            Okay, you caught me. I'm not a minimalist. 
+          </p>
+          <p>
+            Hi, I'm Tina! I'm a freelance artist who fills her time developing apps, doodling, live-coding visuals, and playing with augmented reality as much as possible.
+          </p>
+          <img src="imgs/download.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+
+    <!-- Scan Artist -->
+      <section class="project">
+        <div class="image-container">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="front">
+                <img src="imgs/marker/pattern-scanArtist (1).png" alt="scan artist title" />
+              </div>
+              <div class="back">
+                <img src="imgs/backSA.png" alt="alternative image" />
+              </div>
+            </div>
+            <p><i>NYC, New York Fashion Week 2024</i></p>
+          </div>
+        </div>
+        <div class="project-details-container">
+          <div class="project-details">
+            <p class="project-description">
+              A NYFW show that leverages marker-based augmented
+              reality to tell a story about the current pitfalls
+              in the fashion industry.
+            </p>
+            <a href="#" class="learn-more">Learn More ↗</a>
+          </div>
+          <div class="gallery-container">
+            <div class="gallery">
+              <img id="SA" src="imgs/101_4194.JPG" alt="" />
+              <img id="SA" src="imgs/101_4209.jpg" alt="" />
+              <img id="SA" src="imgs/sa1.png" alt="" />
+              <img id="SA" src="imgs/sa2.png" alt="" />
+              <img id="SA" src="imgs/sa3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Ready Companion -->
+      <section class="project">
+        <div class="image-container">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="front">
+                <img src="imgs/marker/pattern-readyCompanion (1).png" alt="scan artist title" />
+              </div>
+              <div class="back">
+                <img src="imgs/backReady.png" alt="alternative image" />
+              </div>
+            </div>
+            <p><i>Completed November 2023</i></p>
+          </div>
+        </div>
+        <div class="project-details-container">
+          <div class="project-details">
+            <p class="project-description">
+                I was the lead iOS developer on this augmented reality tour guide app, sold to Syracuse University. With precise geolocation technology, this app simulates a campus tour. 
+            </p>
+            <a
+              href="https://www.readycompanion.com/"
+              target="_blank"
+              class="learn-more"
+              >Learn More ↗</a
+            >
+          </div>
+          <div class="gallery-container">
+            <div class="gallery">
+              <img id="RC" src="imgs/ready1.png" alt="you are" />
+              <img id="RC" src="imgs/readypic2.jpg" alt="you are" />
+              <img id="RC" src="imgs/readypic3.png" alt="you are" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Aesthetic Computer -->
+      <section class="project">
+        <div class="image-container">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="front">
+                <img src="imgs/marker/pattern-aestheticComputer.png" alt="scan artist title" />
+              </div>
+              <div class="back">
+                <img src="imgs/backSA.png" alt="alternative image" />
+              </div>
+            </div>
+            <p>Here is some info about the projects.</p>
+          </div>
+        </div>
+        <div class="project-details-container">
+          <div class="project-details">
+            <p class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+              ex ullamcorper, tincidunt ante id, fermentum justo.
+            </p>
+            <a
+              href="https://www.readycompanion.com/"
+              target="_blank"
+              class="learn-more"
+              >Learn More ↗</a
+            >
+          </div>
+          <div class="gallery-container">
+            <div class="gallery">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pianos -->
+      <section class="project">
+        <div class="image-container">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="front">
+                <img src="imgs/marker/pattern-pianos.png" alt="scan artist title" />
+              </div>
+              <div class="back">
+                <img src="imgs/backSA.png" alt="alternative image" />
+              </div>
+            </div>
+            <p>Here is some info about the projects.</p>
+          </div>
+        </div>
+        <div class="project-details-container">
+          <div class="project-details">
+            <p class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+              ex ullamcorper, tincidunt ante id, fermentum justo.
+            </p>
+            <a
+              href="https://www.tina.zone/visuals"
+              target="_blank"
+              class="learn-more"
+              >Learn More ↗</a
+            >
+          </div>
+          <div class="gallery-container">
+            <div class="gallery">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Emotions Detector -->
+      <section class="project">
+        <div class="image-container">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="front">
+                <img src="imgs/marker/pattern-emotionsDetector.png" alt="scan artist title" />
+              </div>
+              <div class="back">
+                <img src="imgs/backSA.png" alt="alternative image" />
+              </div>
+            </div>
+            <p>Here is some info about the projects.</p>
+          </div>
+        </div>
+        <div class="project-details-container">
+          <div class="project-details">
+            <p class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+              ex ullamcorper, tincidunt ante id, fermentum justo.
+            </p>
+            <a
+              href="https://www.readycompanion.com/"
+              target="_blank"
+              class="learn-more"
+              >Learn More ↗</a
+            >
+          </div>
+          <div class="gallery-container">
+            <div class="gallery">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Uye Surana -->
+      <section class="project">
+        <div class="image-container">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="front">
+                <img src="imgs/marker/pattern-uyeSurana.png" alt="scan artist title" />
+              </div>
+              <div class="back">
+                <img src="imgs/backSA.png" alt="alternative image" />
+              </div>
+            </div>
+            <p>Here is some info about the projects.</p>
+          </div>
+        </div>
+        <div class="project-details-container">
+          <div class="project-details">
+            <p class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+              ex ullamcorper, tincidunt ante id, fermentum justo.
+            </p>
+            <a
+              href="https://www.readycompanion.com/"
+              target="_blank"
+              class="learn-more"
+              >Learn More ↗</a
+            >
+          </div>
+          <div class="gallery-container">
+            <div class="gallery">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Distance from Source -->
+      <section class="project">
+        <div class="image-container">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="front">
+                <img src="imgs/marker/pattern-distanceFromSource.png" alt="scan artist title" />
+              </div>
+              <div class="back">
+                <img src="imgs/backSA.png" alt="alternative image" />
+              </div>
+            </div>
+            <p>Here is some info about the projects.</p>
+          </div>
+        </div>
+        <div class="project-details-container">
+          <div class="project-details">
+            <p class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+              ex ullamcorper, tincidunt ante id, fermentum justo.
+            </p>
+            <a
+              href="https://www.readycompanion.com/"
+              target="_blank"
+              class="learn-more"
+              >Learn More ↗</a
+            >
+          </div>
+          <div class="gallery-container">
+            <div class="gallery">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Worship Me -->
+      <section class="project">
+        <div class="image-container">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="front">
+                <img src="imgs/marker/pattern-worshipMe.png" alt="scan artist title" />
+              </div>
+              <div class="back">
+                <img src="imgs/backSA.png" alt="alternative image" />
+              </div>
+            </div>
+            <p>Here is some info about the projects.</p>
+          </div>
+        </div>
+        <div class="project-details-container">
+          <div class="project-details">
+            <p class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+              ex ullamcorper, tincidunt ante id, fermentum justo.
+            </p>
+            <a
+              href="https://www.readycompanion.com/"
+              target="_blank"
+              class="learn-more"
+              >Learn More ↗</a
+            >
+          </div>
+          <div class="gallery-container">
+            <div class="gallery">
+            </div>
+          </div>
+        </div>
+      </section>
+      <img id="toggle-shadow-box" src="imgs/qrCode.png" alt="Open Shadow Box" />
+
+      <!-- Lightbox Popup -->
+      <div id="overlay" class="overlay"></div>
+
+      <div id="lightbox-popup" class="lightbox-popup">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <div class="lightbox-content">
+          <h2>Enhance TINA.ZONE with AR helper</h2>
+          <p>To get started, scan the QR code below on your mobile deivce.</p>
+          <img id="QR" src="imgs/qrCode.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

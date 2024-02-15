@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.clickable {
+    color: black;
+    cursor: pointer;
+    animation: blink 1s infinite;
+
+  }
+  .clickable:hover {
+    color: red;
+    animation: none; 
+    
+  }
+  @keyframes blink {
+    0% {
+      color: blue;
+    }
+    50% {
+      color: black;
+    }
+    100% {
+      color: blue;
+    }
+  }
+
+
+header {
+    color: black;
+    padding: 20px;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+    z-index: 1000;
+    background-color: white;    
+    border-bottom: 2px dotted rgb(0, 0, 0); 
+    transition: height 0.3s ease;
+}
+.expanded {
+    height: 100vh; /* 100% of the viewport height */
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+}
+
+.header-text {
+    font-weight: normal; 
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+
+}
+
+main {
+    padding-top: 120px; 
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+}
+
+.project {
+    display: flex;
+    padding: 0px;
+}
+
+#borderStuff{
+    border-bottom: 2px dotted rgb(0, 0, 0); 
+}
+.project-details-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 100%; 
+    border-bottom: 2px dotted black;
+
+}
+
+.project-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    margin-bottom: 10px;
+    width: 85%;
+    font-size: 18px;
+	/* font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;  */
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+
+}
+
+.gallery-container {
+    overflow-x: auto;
+    max-width: 85%; /* Set maximum width to prevent overflow */
+}
+
+.gallery {
+    display: flex;
+    white-space: nowrap;
+}
+
+#SA{
+    width: 37%; /* Set width of gallery images */
+}
+#RC{
+    width: 70%;
+}
+.gallery img {
+    flex-shrink: 0;
+    margin-right: 2px; 
+
+}
+.about {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+    top: 0px;
+    /* font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;  */
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+
+
+}
+
+#more-link{
+    font-size: 25px;
+    /* font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;  */
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+
+    text-decoration: underline;
+    color: rgb(107, 11, 126);
+}
+
+.learn-more {
+    color: black;
+    cursor: pointer;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+}
+
+.learn-more:hover {
+    color: red;
+}
+
+
+/* Lightbox Popup Styles */
+.lightbox-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border: 2px solid rgb(255, 0, 0); /* Add border to the lightbox popup */
+    z-index: 1001;
+}
+
+.lightbox-content {
+    text-align: center;
+}
+
+.lightbox-content h2 {
+    margin-top: 15px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none;
+    border: none;
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    /* font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;  */
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+
+    cursor: pointer;
+    padding: 15px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+}
+
+#toggle-shadow-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 5%;
+    z-index: 1001; 
+    border: 2px solid rgb(255, 0, 0); 
+
+}
+
+#QR{
+    width: 30%;
+}
+.image-container {
+    position: relative;
+    width: 20%;
+    padding-left: 100px;
+    perspective: 1000px; 
+    overflow: hidden; 
+    border-bottom: 2px dotted black;
+}
+
+
+.flip-container {
+    position: relative;
+    width: 100%;
+    height: 35%;
+    padding-top: 15px;
+}
+.flip-container p {
+    margin-left: 19px;
+    margin-right: 19px;
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+
+}
+
+.flipper {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s; 
+    transform-style: preserve-3d;
+}
+
+.image-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front{
+    /* border-color: red !important;
+    border-bottom: 2px dotted;
+    border-left:  2px dotted ; */
+}
+.back{
+    border: none;
+
+}
+
+.front img,
+.back img {
+    max-width: 100%; 
+    max-height: 100%; 
+    
+}
+
+.back {
+    transform: rotateY(180deg);
+}
