@@ -249,11 +249,7 @@ main {
     backface-visibility: hidden;
 }
 
-.front{
-    /* border-color: red !important;
-    border-bottom: 2px dotted;
-    border-left:  2px dotted ; */
-}
+
 .back{
     border: none;
 
