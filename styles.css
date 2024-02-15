@@ -1,7 +1,10 @@
+
+
 body {
     margin: 0;
     padding: 0;
 }
+
 
 .clickable {
     color: black;
@@ -265,4 +268,39 @@ main {
 
 .back {
     transform: rotateY(180deg);
+}
+
+.titles{
+    padding-left: 20px;
+    margin-bottom: 0px;
+    display:none;
+}
+
+@media screen and (max-width: 768px) {
+    #toggle-shadow-box {
+        display: none;
+    }
+
+    .header-text{
+        padding: 0px; 
+        font-size: 25px; 
+    }
+
+    #more-link{
+        font-size: 15px; 
+    }
+
+    .image-container {
+        display: none;
+    }
+    #moreInfo{
+        width:80%;
+        font-size:14px;
+    }
+    #bioImage{
+        width:80%;
+    }
+    .titles{
+        display:block;
+    }
 }

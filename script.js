@@ -1,21 +1,24 @@
 /// Popup
 document.addEventListener("DOMContentLoaded", function () {
-  function showLightboxPopup() {
-    var lightboxPopup = document.getElementById("lightbox-popup");
-    var overlay = document.getElementById("overlay");
-    lightboxPopup.style.display = "block";
-    overlay.style.display = "block";
-
-    var closeButton = document.getElementById("close-btn");
-
-    closeButton.addEventListener("click", function () {
-      lightboxPopup.style.display = "none";
-      overlay.style.display = "none";
-    });
-  }
-
-  setTimeout(showLightboxPopup, 3000);
-});
+    // Check if the screen width is greater than 768px (desktop)
+    if (window.innerWidth > 768) {
+      function showLightboxPopup() {
+        var lightboxPopup = document.getElementById("lightbox-popup");
+        var overlay = document.getElementById("overlay");
+        lightboxPopup.style.display = "block";
+        overlay.style.display = "block";
+  
+        var closeButton = document.getElementById("close-btn");
+  
+        closeButton.addEventListener("click", function () {
+          lightboxPopup.style.display = "none";
+          overlay.style.display = "none";
+        });
+      }
+  
+      setTimeout(showLightboxPopup, 3000);
+    }
+  });
 
 // TOGGLE BUTTON
 document.addEventListener("DOMContentLoaded", function () {
@@ -69,8 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
-
-  // Change the dynamic word every 1 second
 });
 
 var isExpanded = false;
@@ -81,8 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var moreInfo = document.getElementById("moreInfo");
 
   moreLink.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent the default link behavior
-    header.classList.toggle("expanded"); // Toggle the 'expanded' class
+    event.preventDefault(); 
+    header.classList.toggle("expanded"); 
 
     // Change the text of the link based on the header's state
     if (header.classList.contains("expanded")) {
