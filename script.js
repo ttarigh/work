@@ -1,24 +1,24 @@
 /// Popup
 document.addEventListener("DOMContentLoaded", function () {
-    // Check if the screen width is greater than 768px (desktop)
-    if (window.innerWidth > 768) {
-      function showLightboxPopup() {
-        var lightboxPopup = document.getElementById("lightbox-popup");
-        var overlay = document.getElementById("overlay");
-        lightboxPopup.style.display = "block";
-        overlay.style.display = "block";
-  
-        var closeButton = document.getElementById("close-btn");
-  
-        closeButton.addEventListener("click", function () {
-          lightboxPopup.style.display = "none";
-          overlay.style.display = "none";
-        });
-      }
-  
-      setTimeout(showLightboxPopup, 3000);
+  // Check if the screen width is greater than 768px (desktop)
+  if (window.innerWidth > 768) {
+    function showLightboxPopup() {
+      var lightboxPopup = document.getElementById("lightbox-popup");
+      var overlay = document.getElementById("overlay");
+      lightboxPopup.style.display = "block";
+      overlay.style.display = "block";
+
+      var closeButton = document.getElementById("close-btn");
+
+      closeButton.addEventListener("click", function () {
+        lightboxPopup.style.display = "none";
+        overlay.style.display = "none";
+      });
     }
-  });
+
+    setTimeout(showLightboxPopup, 3000);
+  }
+});
 
 // TOGGLE BUTTON
 document.addEventListener("DOMContentLoaded", function () {
@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function toggleShadowBox() {
     shadowBox.style.display =
       shadowBox.style.display === "block" ? "none" : "block";
-    overlay.style.display = "block";
+    overlay.style.display =
+      overlay.style.display === "block" ? "none" : "block";
   }
   toggleButton.addEventListener("click", toggleShadowBox);
 });
@@ -82,8 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var moreInfo = document.getElementById("moreInfo");
 
   moreLink.addEventListener("click", function (event) {
-    event.preventDefault(); 
-    header.classList.toggle("expanded"); 
+    event.preventDefault();
+    header.classList.toggle("expanded");
 
     // Change the text of the link based on the header's state
     if (header.classList.contains("expanded")) {
@@ -105,13 +106,12 @@ function showLabel(letter, title) {
   const dynamicWord = document.getElementById("dynamic-word");
   label.textContent = "'s " + title;
   label.style.display = "inline-block";
-  dynamicWord.style.display = "none"; 
-
+  dynamicWord.style.display = "none";
 }
 
 function hideLabel(letter) {
-    const label = document.getElementById("labels");
-    const dynamicWord = document.getElementById("dynamic-word");
-    dynamicWord.style.display = "inline-block"; 
-    label.style.display = "none";
+  const label = document.getElementById("labels");
+  const dynamicWord = document.getElementById("dynamic-word");
+  dynamicWord.style.display = "inline-block";
+  label.style.display = "none";
 }
