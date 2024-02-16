@@ -135,7 +135,7 @@ main {
 .learn-more {
     color: black;
     cursor: pointer;
-    padding-bottom: 2px;
+    padding: 0 19px;
     text-decoration: none;
     font-size: 14px;
     font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
@@ -287,12 +287,6 @@ main {
 
     #more-link{
         font-size: 15px; 
-    }
-    #IMG{
-        width: 90%;
-    }
-    #IMGsmall{
-        width: 90%;
     }
 
     .image-container {
