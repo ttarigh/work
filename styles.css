@@ -132,7 +132,7 @@ main {
     color: rgb(107, 11, 126);
 }
 
-.learn-more {
+.learn-more-Desktop {
     color: black;
     cursor: pointer;
     padding: 0 19px;
@@ -141,10 +141,22 @@ main {
     font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
 }
 
-.learn-more:hover {
+.learn-more-Desktop:hover {
     color: red;
 }
 
+.learn-more-Mobile {
+    display: none;
+    color: black;
+    cursor: pointer;
+    padding: 0 19px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+}
+.learn-more-Mobile:hover {
+    color: red;
+}
 
 /* Lightbox Popup Styles */
 .lightbox-popup {
@@ -301,5 +313,11 @@ main {
     }
     .titles{
         display:block;
+    }
+    .learn-more-Mobile {
+        display:block;
+    }
+    .learn-more-Desktop{
+        display:none;
     }
 }
