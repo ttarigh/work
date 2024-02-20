@@ -124,15 +124,15 @@ main {
     text-decoration: none;
     font-size: 30px;
     top: 0px;
-    /* font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;  */
     font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
-
-
 }
-
+#aboutMeText{
+    text-align: left;
+    flex:1;
+    padding-right: 100px;
+}
 #more-link{
     font-size: 25px;
-    /* font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;  */
     font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
 
     text-decoration: underline;
@@ -297,6 +297,9 @@ main {
     }
     .gallery-container{
         max-width: 95%;
+    }
+    #SAvideo{
+        display:none;
     }
 
     .header-text{
