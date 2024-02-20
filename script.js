@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
     " is a computer scientist.",
     " is a fashionista.",
     " is a music visualizer.",
+    " is a performer.",
+    " is a live-coder.",
   ];
   let dynamicWordIndex = 0;
 
@@ -115,3 +117,5 @@ function hideLabel(letter) {
   dynamicWord.style.display = "inline-block";
   label.style.display = "none";
 }
+
+
