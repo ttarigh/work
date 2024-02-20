@@ -43,8 +43,13 @@ header {
     transition: height 0.3s ease;
 }
 .expanded {
-    height: 100vh; /* 100% of the viewport height */
+    height: 100vh; 
     font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+    background-image: url('imgs/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FFF200;
 }
 
 .header-text {
@@ -319,7 +324,7 @@ main {
         font-size:14px;
     }
     #bioImage{
-        width:80%;
+        display:none;
     }
     .titles{
         display:block;
@@ -335,6 +340,17 @@ main {
     }
     .project{
         margin-left: 20px;
+    }
+    #minimalist{
+        display:none;
+    }
+    .expanded{
+        background-color: rgb(174, 255, 0);
+        background-image: none;
+
+    }
+    #aboutMeText{
+        padding-right:0px;
     }
 }
 
