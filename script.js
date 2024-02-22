@@ -93,12 +93,10 @@ document.addEventListener("DOMContentLoaded", function () {
       isExpanded = true;
       moreLink.textContent = "{...less}";
       moreInfo.style.display = "block";
-      header.style.backgroundColor = "orange";
     } else {
       isExpanded = false;
       moreLink.textContent = "{more...}";
       moreInfo.style.display = "none";
-      header.style.backgroundColor = "white";
     }
   });
 });

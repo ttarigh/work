@@ -52,25 +52,40 @@
       </div>
       <!-- About Me -->
       <div style="display: none; text-align: center" id="moreInfo">
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <p>Okay, you caught me. I'm not a minimalist.</p>
-          <p>
-            Hi, I'm Tina! I'm a freelance artist who fills her time developing
-            apps, doodling, live-coding visuals, and playing with augmented
-            reality as much as possible.
-          </p>
-          <p>
-            My primary focus is bringing exciting, new technology like AR and ML
-            to pracitcal use cases for the average person.
-          </p>
-          <img id="bioImage" src="imgs/download.png" alt="" />
+        <div id="bioTextContainer">
+          <div id="aboutMeText">
+            <p id="minimalist">Okay, you caught me. I'm not a minimalist.</p>
+            <p style="font-size: 22px">
+              Hi, I'm Tina! I’m a freelance technologist currently based in
+              Brooklyn, NY.
+            </p>
+            <p style="font-size: 22px">
+              My work spans two fronts: leveraging new mediums for empathetic
+              storytelling, and innovating new artist tools.
+            </p>
+            <p>
+              I recently graduated from Wellesley College (2022) with a degree
+              in computer science. I also had the opportunity to study
+              computational intelligence, algorithms, and design at Vrije
+              Universiteit. As a freelancer spanning industries like government,
+              healthcare, fashion, education, and more, I feel like I’m still
+              learning everyday.
+            </p>
+            <p>
+              I believe everyone has something to teach. If you want to talk or
+              collaborate please:
+              <a href="mailto:tinatarighianwork@gmail.com">email me</a>.
+              <a href="tel:+19739084582">text me</a>.
+            </p>
+          </div>
+          <video
+            id="bioImage"
+            style="max-width: 45%; height: auto; padding-right: 100px"
+            muted
+            autoplay
+            loop
+            src="imgs/bioImage.mp4"
+          ></video>
         </div>
       </div>
     </header>
@@ -89,7 +104,7 @@
                 />
               </div>
               <div class="back">
-                <img src="imgs/backSA.png" alt="alternative image" />
+                <img src="imgs/marker/Pattern-hiro.png" alt="alternative image" />
               </div>
             </div>
             <p><i>NYC, New York Fashion Week 2024</i></p>
@@ -105,17 +120,50 @@
         <div class="project-details-container">
           <div class="project-details">
             <p class="project-description">
-              A NYFW show that tells a story about the current pitfalls of the
+              A NYFW show that tells a story about the current scourges of the
               fashion industry through marker-based augmented reality.
             </p>
           </div>
           <div class="gallery-container">
             <div class="gallery">
-              <img id="IMG" src="imgs/101_4194.JPG" alt="" />
-              <img id="IMG" src="imgs/101_4209.jpg" alt="" />
-              <img id="IMG" src="imgs/sa1.png" alt="" />
-              <img id="IMG" src="imgs/sa2.png" alt="" />
-              <img id="IMG" src="imgs/sa3.png" alt="" />
+              <video
+                id="SAvideo"
+                muted
+                loop
+                autoplay
+                src="imgs/scanArtist/shirt.mov"
+              ></video>
+              <video
+                id="SAvideo"
+                muted
+                loop
+                autoplay
+                src="imgs/scanArtist/horse.MOV"
+              ></video>
+              <img
+                id="IMG"
+                src="imgs/scanArtist/Screenshot 2024-02-20 at 12.25.02 PM.png"
+                alt=""
+              />
+              <img id="IMG" src="imgs/scanArtist/models.jpg" alt="" />
+              <video
+                id="SAvideo"
+                muted
+                loop
+                autoplay
+                src="imgs/scanArtist/penis.MOV"
+              ></video>
+              <img id="IMG" src="imgs/scanArtist/sa2.png" alt="" />
+              <img id="IMG" src="imgs/scanArtist/sketchOfSite.png" alt="" />
+              <img id="IMG" src="imgs/scanArtist/babies.jpg" alt="" />
+              <img id="IMG" src="imgs/scanArtist/wings.JPG" alt="" />
+              <img id="IMG" src="imgs/scanArtist/sa3.png" alt="" />
+              <img id="IMG" src="imgs/scanArtist/hair.jpg" alt="" />
+              <img id="IMG" src="imgs/scanArtist/horse.jpg" alt="" />
+              <img id="IMG" src="imgs/scanArtist/backOfHorse.jpg" alt="" />
+              <img id="IMG" src="imgs/scanArtist/laser.jpg" alt="" />
+              <img id="IMG" src="imgs/scanArtist/otherSketch.png" alt="" />
+              <img id="IMG" src="imgs/scanArtist/sa1.png" alt="" />
             </div>
           </div>
         </div>
@@ -134,12 +182,12 @@
             <div class="flipper">
               <div class="front">
                 <img
-                  src="imgs/marker/pattern-readyCompanion (1).png"
+                  src="imgs/marker/pattern-readyCompanion.png"
                   alt="scan artist title"
                 />
               </div>
               <div class="back">
-                <img src="imgs/logos/backReady.png" alt="alternative image" />
+                <img src="imgs/marker/Kanji_marker_ARjs-1.png" alt="alternative image" />
               </div>
             </div>
             <p><i>iOS App Development, RealityKit, Augmented Reality</i></p>
@@ -218,9 +266,9 @@
         <div class="project-details-container">
           <div class="project-details">
             <p class="project-description">
-              I spearheaded the development of Aesthetic Computer's Happy Hands,
-              a series of hands-free (or trackpad-free) controlled immersive
-              gameplay.
+              I spearheaded the development of Aesthetic Computer's "Happy
+              Hands," a series of hands-free (or trackpad-free) controlled
+              immersive gameplay.
             </p>
             <p id="minihead">
               For Mapping Hand Gestures, visit
@@ -285,8 +333,8 @@
           <div class="project-details">
             <p class="project-description">
               You're the fairest of them all! In collaboration with the head
-              designer, I built "magic mirrors" for a fashion brand emphasizing
-              inclusivity.
+              designer of Uye Surana, I built "magic mirrors" for a fashion
+              brand emphasizing inclusivity.
             </p>
           </div>
           <div class="gallery-container">
@@ -362,7 +410,7 @@
       <!-- Emotions Detector -->
       <h2 class="titles">Emotions Detector</h2>
       <a
-        href="https://www.readycompanion.com/"
+        href="https://tina.zone/happytest/"
         target="_blank"
         class="learn-more-Mobile"
         >Learn More ↗</a
@@ -380,7 +428,7 @@
             </div>
             <p><i>Personal Project, Web Development</i></p>
             <a
-              href="https://www.readycompanion.com/"
+              href="https://tina.zone/happytest/"
               target="_blank"
               class="learn-more-Desktop"
               >Learn More ↗</a

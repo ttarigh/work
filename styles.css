@@ -43,8 +43,13 @@ header {
     transition: height 0.3s ease;
 }
 .expanded {
-    height: 100vh; /* 100% of the viewport height */
+    height: 100vh; 
     font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+    background-image: url('imgs/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FFF200;
 }
 
 .header-text {
@@ -124,20 +129,28 @@ main {
     text-decoration: none;
     font-size: 30px;
     top: 0px;
-    /* font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;  */
     font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
-
-
 }
-
+#aboutMeText{
+    text-align: left;
+    flex:1;
+    padding-right: 100px;
+}
 #more-link{
     font-size: 25px;
-    /* font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;  */
     font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
 
     text-decoration: underline;
     color: rgb(107, 11, 126);
 }
+
+#bioTextContainer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
 
 .learn-more-Desktop {
     color: black;
@@ -298,6 +311,9 @@ main {
     .gallery-container{
         max-width: 95%;
     }
+    #SAvideo{
+        display:none;
+    }
 
     .header-text{
         padding: 5px; 
@@ -312,11 +328,14 @@ main {
         display: none;
     }
     #moreInfo{
-        width:80%;
+        width:95%;
         font-size:14px;
     }
     #bioImage{
-        width:80%;
+        display:none;
+    }
+    #bioTextContainer{
+        padding: 5px;
     }
     .titles{
         display:block;
@@ -332,6 +351,17 @@ main {
     }
     .project{
         margin-left: 20px;
+    }
+    #minimalist{
+        display:none;
+    }
+    .expanded{
+        background-color: rgb(174, 255, 0);
+        background-image: none;
+
+    }
+    #aboutMeText{
+        padding-right:0px;
     }
 }
 
