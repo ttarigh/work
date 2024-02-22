@@ -144,6 +144,14 @@ main {
     color: rgb(107, 11, 126);
 }
 
+#bioTextContainer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+
 .learn-more-Desktop {
     color: black;
     cursor: pointer;
@@ -320,11 +328,14 @@ main {
         display: none;
     }
     #moreInfo{
-        width:98%;
+        width:95%;
         font-size:14px;
     }
     #bioImage{
         display:none;
+    }
+    #bioTextContainer{
+        padding: 5px;
     }
     .titles{
         display:block;
