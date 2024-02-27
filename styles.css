@@ -336,6 +336,7 @@ main {
     }
     #bioTextContainer{
         padding: 5px;
+        max-width:95%;
     }
     .titles{
         display:block;
