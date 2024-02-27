@@ -304,6 +304,9 @@ main {
     display:none;
 }
 
+#mobileGIF{
+    display:none;
+}
 @media screen and (max-width: 768px) {
     #toggle-shadow-box {
         display: none;
@@ -363,6 +366,12 @@ main {
     }
     #aboutMeText{
         padding-right:0px;
+    }
+    #mobileGIF{
+        display:block;
+    }
+    #mobileVID{
+        display:none;
     }
 }
 
